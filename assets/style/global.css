@@ -4,6 +4,8 @@
     padding: 0;
 }
 body{
+    display: flex;
+    flex-direction: column;
     background-color: rgba(125, 118, 118, 0.199);
 }
 
@@ -55,8 +57,3 @@ body{
     background-color: #3F729B;
 }
 
-.container{
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-}

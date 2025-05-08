@@ -1,23 +1,22 @@
 .container{
-    max-width: 1000px;
+    max-width: 75rem;
     margin: 0 auto;
-    width: 100%;
-    padding: 0 24px;
+    padding: 0 1.5rem;
 }
 
 .hero-section{
-    margin-top: 100px;
+    margin-top: 6.25rem;
     text-align: center;
-    padding: 40px 20px;
+    padding: 2.5rem 1.25rem;
     background-color: white;
 }
 
 .hero-section img{
-    width: 300px;
-    height: 300px;
+    width: 18.75rem;
+    height: 18.75rem;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .hero-section h1{
@@ -27,18 +26,18 @@
 
 .hero-section p{
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 1.5rem;
 }
 
 .button{
     display: inline-block;
-    padding: 10px 24px;
+    padding: 0.5rem 0.625rem;
     background-color: darkgrey;
     text-decoration: none;
     color: black;
     font-weight: bold;
-    border-radius: 8px;
-    font-size: 22px;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
 }
 
 .button:hover{
@@ -47,16 +46,18 @@
 
 .call-to-action{
     display: flex;
+    flex-direction:row;
     justify-content: center;
     align-items:stretch;
     gap:1rem;
     padding: 40px 20px;
+    width:100%;
     background-color: #fff;
 }
 
 .columns-divider{
     align-self: stretch;
-    width: 2px;
+    width: 0.2rem;
     background-color: #ccc;
     height: auto;
 }
@@ -71,17 +72,18 @@
 .project-preview,
 .contact-info{
     box-sizing: border-box;
-    width: 450px;
-    min-height:500px;
-    padding: 20px;
+    width: 28.125rem;
+    min-height:31.25rem;
+    padding: 1.25rem;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.25rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     line-height: 1.6; 
+    border-radius:0.5rem;
 }
 
 .project-preview img{
@@ -104,5 +106,130 @@
 .contact-info i{
     margin-right: 10px;
     font-size: 20px;
-    vertical-align: middle;
+    color: rgb(76, 117, 152);
+    /* vertical-align: middle; */
 }
+
+
+/* Smartphones (very small screens) */
+@media (max-width: 575px) {
+    .hero-section img {
+      width: 10rem;
+      height: 10rem;
+    }
+  
+    .hero-section h1 {
+      font-size: 1.25rem;
+    }
+  
+    .hero-section p {
+      font-size: 1rem;
+    }
+  
+    .button {
+      font-size: 1.125rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    .call-to-action {
+      flex-direction: column;
+      gap: 0.75rem;
+      padding: 1rem;
+    }
+  
+    .project-preview,
+    .contact-info {
+      width: 100%;
+      margin: 0;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+  
+    .columns-divider {
+      display: none;
+    }
+  }
+  
+  /* Smartphones – 576px to 766px */
+  @media (min-width: 576px) and (max-width: 766px) {
+    .hero-section img {
+      width: 12rem;
+      height: 12rem;
+    }
+  
+    .hero-section h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hero-section p {
+      font-size: 1.25rem;
+    }
+  
+    .call-to-action {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1.25rem;
+    }
+  
+    .project-preview,
+    .contact-info {
+      width: 100%;
+      margin: 0;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+  
+    .columns-divider {
+      display: none;
+    }
+  }
+  
+  /* Tablets – 767px to 991px */
+  @media (min-width: 767px) and (max-width: 991px) {
+    .hero-section img {
+      width: 14rem;
+      height: 14rem;
+    }
+  
+    .call-to-action {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 2rem;
+    }
+  
+    .project-preview,
+    .contact-info {
+      width: 48%;
+    }
+  }
+  
+  /* Laptops – 992px to 1199px */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .hero-section img {
+      width: 16rem;
+      height: 16rem;
+    }
+  
+    .project-preview,
+    .contact-info {
+      width: 28.125rem;
+    }
+  }
+  
+  /* Desktops – 1200px to 1399px */
+  @media (min-width: 1200px) and (max-width: 1399px) {
+    .hero-section img {
+      width: 18.75rem;
+      height: 18.75rem;
+    }
+  }
+  
+  /* Extra Large Screens – 1400px and up */
+  @media (min-width: 1400px) {
+    .hero-section img {
+      width: 20rem;
+      height: 20rem;
+    }
+  }
+  

@@ -1,60 +1,165 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     background-color: rgba(125, 118, 118, 0.199);
+    width: 100%;
+    overflow-x: hidden;
 }
 
-.nav-bar{
-    height: 100px;
-    position: fixed;
-    top: 0;
-    left: 0;
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+/* floting nav bar! */
+.nav-bar {
+    position:fixed;
+    height: 100px; 
+    display: flex;
+    justify-content: center;
     width: 100%;
-    z-index: 1000;
     background-color: #3F729B;
     padding: 0;
 }
 
-.nav-bar ul{
-    height: 100px;
+.nav-links {
+    height: 6.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
     list-style: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: 0;
     padding: 0;
 }
 
-.nav-bar a{
+.nav-bar a {
     color: white;
     font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.5rem;
     text-decoration: none;
+    font-size:1.25rem;
 }
 
 .nav-bar a:hover,
-.nav-bar a.active{
+.nav-bar a.active {
     background-color: #294c68;
 }
 
-.footer-bar{
+.footer-bar {
+    width:100%;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     color: white;
     padding: 0;
     background-color: #3F729B;
+    box-sizing: border-box;
 }
 
+.hamburger,
+.dark-mode-toggle {
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    font-size: 1.75rem;
+    background: none;
+    border: none;
+    color: white;
+    top: 2.2rem;
+}
+
+.hamburger {
+    left: 2rem;
+    display: none;
+}
+
+/* DARK-MODE*/
+.dark-mode-toggle {
+    right: 2rem;
+}
+
+/* add all the .dark-mode styles here. format: .dark-mode .(the elems class u want to style) */
+.dark-mode {
+    background-color: rgba(0, 0, 0, 0.583);
+}
+
+.dark-mode.nav-bar {
+    background-color: #1a2630;
+}
+
+
+/* Smartphones (small screens) */
+@media (max-width: 575px) {
+    /* Styles for very small phones */
+}
+
+@media (max-width: 767px) {
+    /* Styles for all smartphones */
+}
+/* Mobile – up to 991px */
+@media (max-width: 991px) {
+
+    /* Styles for all smartphones */
+    .hamburger {
+        display: flex;
+        position:absolute;
+        z-index: 1000;
+    }
+
+    .nav-links {
+        position: relative;
+        padding: 1.2rem;
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        background-color: #3F729B;
+        display: none;
+        padding: 2rem auto;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+}
+
+/* Mobile and small tablets – 576px and up */
+@media (min-width: 576px) and (max-width: 767px) {
+    /* Styles for phones and small tablets */
+}
+
+/* Tablets – 768px and up */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Styles for tablets */
+
+}
+
+/* Laptops – 992px and up */
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Styles for small laptops */
+}
+
+/* Desktops – 1200px and up */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    /* Styles for standard desktops */
+}
+
+/* Extra Large Screens – 1400px and up */
+@media (min-width: 1400px) {
+    /* Styles for large desktops, ultra-wide screens */
+}
+
+/* max-width: applies styles up to a certain screen size 
+	min-width: applies styles from a certain screen size and up */

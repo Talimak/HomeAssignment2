@@ -7,21 +7,28 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="assets/style/global.css">
   <link rel="stylesheet" href="assets/style/home.css">
+  <script src="services/global.js"></script>
   <title>My Portfolio</title>
 </head>
 
 <body>
   <header>
     <nav class="nav-bar">
-      <ul>
+      <button class="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="skills.html">Skills</a></li>
         <li><a href="project-calculator.html">Project Calculator</a></li>
       </ul>
     </nav>
+    <button class="dark-mode-toggle">
+      <i class="fas fa-moon"></i>
+    </button>
   </header>
-
+  
   <main class="container">
       <section class="hero-section">
         <img src="assets/imgs/profile-image.jpg" alt="Profile-Picture">

@@ -1,4 +1,4 @@
-.container{
+.index-page{
     max-width: 75rem;
     margin: 0 auto;
     padding: 0 1.5rem;
@@ -29,6 +29,10 @@
     font-size: 1.5rem;
 }
 
+.index-headers {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .button{
     display: inline-block;
     padding: 0.5rem 0.625rem;
@@ -37,7 +41,7 @@
     color: black;
     font-weight: bold;
     border-radius: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .button:hover{
@@ -107,9 +111,7 @@
     margin-right: 10px;
     font-size: 20px;
     color: rgb(76, 117, 152);
-    /* vertical-align: middle; */
 }
-
 
 /* Smartphones (very small screens) */
 @media (max-width: 575px) {
@@ -150,86 +152,72 @@
     }
   }
   
-  /* Smartphones – 576px to 766px */
-  @media (min-width: 576px) and (max-width: 766px) {
-    .hero-section img {
-      width: 12rem;
-      height: 12rem;
-    }
+    /* Smartphones – 576px to 766px */
+    @media (min-width: 576px) and (max-width: 766px) {
+      .hero-section img {
+        width: 12rem;
+        height: 12rem;
+      }
   
-    .hero-section h1 {
-      font-size: 1.5rem;
-    }
+      .hero-section h1 {
+        font-size: 1.5rem;
+      }
   
-    .hero-section p {
-      font-size: 1.25rem;
-    }
+      .hero-section p {
+        font-size: 1.25rem;
+      }
   
-    .call-to-action {
-      flex-direction: column;
-      gap: 1rem;
-      padding: 1.25rem;
-    }
+      .call-to-action {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.25rem;
+      }
   
-    .project-preview,
-    .contact-info {
-      width: 100%;
-      margin: 0;
-      padding: 1rem;
-      box-sizing: border-box;
-    }
-  
-    .columns-divider {
-      display: none;
-    }
+      .contact-info {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1rem;
+        box-sizing: border-box;
+      }
+    
+      .project-preview {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1rem;
+        box-sizing: border-box;
+      }
+
+      .columns-divider {
+        display: none;
+      }
   }
   
   /* Tablets – 767px to 991px */
-  @media (min-width: 767px) and (max-width: 991px) {
-    .hero-section img {
-      width: 14rem;
-      height: 14rem;
+    @media (min-width: 767px) and (max-width: 991px) {
+      .hero-section img {
+        width: 14rem;
+        height: 14rem;
+      }
+  
+      .call-to-action {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 2rem;
+      }
+  
+      .project-preview,
+      .contact-info {
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+        box-sizing: border-box;
+      }
+  
+      .columns-divider {
+        display: none;
+      }
     }
   
-    .call-to-action {
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 1rem;
-      padding: 2rem;
-    }
-  
-    .project-preview,
-    .contact-info {
-      width: 48%;
-    }
-  }
-  
-  /* Laptops – 992px to 1199px */
-  @media (min-width: 992px) and (max-width: 1199px) {
-    .hero-section img {
-      width: 16rem;
-      height: 16rem;
-    }
-  
-    .project-preview,
-    .contact-info {
-      width: 28.125rem;
-    }
-  }
-  
-  /* Desktops – 1200px to 1399px */
-  @media (min-width: 1200px) and (max-width: 1399px) {
-    .hero-section img {
-      width: 18.75rem;
-      height: 18.75rem;
-    }
-  }
-  
-  /* Extra Large Screens – 1400px and up */
-  @media (min-width: 1400px) {
-    .hero-section img {
-      width: 20rem;
-      height: 20rem;
-    }
-  }
+
   

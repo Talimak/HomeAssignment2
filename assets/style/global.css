@@ -15,9 +15,9 @@ body {
 header {
     display: flex;
     flex-direction: row;
+    z-index:10;
 }
 
-/* floting nav bar! */
 .nav-bar {
     position:fixed;
     height: 100px; 
@@ -88,6 +88,7 @@ header {
 /* DARK-MODE*/
 .dark-mode-toggle {
     right: 2rem;
+    position: fixed;
 }
 
 /* add all the .dark-mode styles here. format: .dark-mode .(the elems class u want to style) */
@@ -99,15 +100,6 @@ header {
     background-color: #1a2630;
 }
 
-
-/* Smartphones (small screens) */
-@media (max-width: 575px) {
-    /* Styles for very small phones */
-}
-
-@media (max-width: 767px) {
-    /* Styles for all smartphones */
-}
 /* Mobile – up to 991px */
 @media (max-width: 991px) {
 
@@ -126,13 +118,18 @@ header {
         flex-direction: column;
         background-color: #3F729B;
         display: none;
-        padding: 2rem auto;
+        padding:1.2rem;
     }
 
     .nav-links.show {
-        display: flex;
+            display: flex;
     }
-
+    
+    .footer-bar {
+            font-size: 1rem;
+            flex-direction: column;
+            padding: 1rem;
+    }
 }
 
 /* Mobile and small tablets – 576px and up */

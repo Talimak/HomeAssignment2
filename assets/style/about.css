@@ -31,6 +31,9 @@
 .about-box:hover {
   box-shadow: 0 0.625rem 1.5rem rgba(0, 0, 0, 0.15)
 }
+.about-img:hover{
+  box-shadow: 0 0.625rem 1.5rem rgba(0, 0, 0, 0.15)
+}
 
 .about-img {
   width: 45%;
@@ -68,7 +71,7 @@
   .about-box {
     font-size: 1rem;
     padding: 1rem;
-    height: auto;
+    width:100%;
   }
 
   .about-headers {
@@ -89,13 +92,14 @@
   }
 
   .about-box {
-    font-size: 1.125rem;
+    font-size: 1rem;
+    text-align: center;
     padding: 1.25rem;
     height: auto;
   }
 
   .about-headers {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -109,14 +113,15 @@
   }
 
   .about-img {
-    width: 45%;
+    width: 100%;
     height: auto;
   }
 
   .about-box {
-    width: 52%;
+    width: 100%;
     font-size: 1.125rem;
     padding: 1.5rem;
+    box-sizing: border-box;
   }
   .columns-divider {
     display: none;
@@ -144,7 +149,6 @@
     height: 250px;
   }
 }
-
 /* Extra Large Screens – 1400px+ */
 @media (min-width: 1400px) {
   .about-img {

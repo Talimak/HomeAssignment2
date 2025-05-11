@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="assets/style/global.css">
   <link rel="stylesheet" href="assets/style/calcualtor.css">
   <script src="services/global.js"></script>
-  <title>Project Quote Calculator</title>
+  <script src="services/calculator.js"></script>
+  <title>Project Quote Clculator</title>
 </head>
 
 <body>
@@ -29,7 +30,40 @@
     </button>
   </header>
 
-  <main></main>
+  <main class="calculator-page">
+    <section class="form-container">
+      <form id="priceCalculatorForm">
+        <label for="websiteType">🌐 Site Type</label>
+        <select id="websiteType">
+          <option value="-1">--Choose--</option>
+          <option value="businessSite">Business Site</option>
+          <option value="onlineStore">Online Store</option>
+          <option value="blog">Blog</option>
+        </select>
+
+        <label for="pageCount">📄 Number of Pages (1–10)</label>
+        <input type="number" id="pageCount" min="1" max="10" value="1" />
+
+        <label for="customDesign">
+          <input type="checkbox" id="customDesign" />
+          ✏️ Custom Design
+        </label>
+
+        <button type="button" id="calculateBtn">Calculate Price</button>
+        <button type="reset" id="resetBtn">Reset</button>
+      </form>
+
+      <div id="projectSummary" class="summary-box hidden">
+        <h3>📋 Project Summary</h3>
+        <p>🌐Site Type: <span id="summaryType"></span></p>
+        <p>📄Pages: <span id="summaryPages"></span></p>
+        <p>✏️Custom Design: <span id="summaryCustom"></span></p>
+        <p>💰Total Price: <span id="summaryPrice"></span></p>
+        <p class="thanks">✅ Thank you for using our quote calculator!</p>
+      </div>
+    </section>
+  </main>
+
   <footer class="footer-bar">
     <p>© 2025 Tali Makovizky. All rights reserved.</p>
   </footer>

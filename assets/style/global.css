@@ -28,10 +28,13 @@ header {
     width: 100%;
     background-color: #3F729B;
     padding: 0;
+    top: 0;
+    left: 0;
+
 }
 
 .nav-links {
-    height: 6.25rem;
+    height:auto;
     display: flex;
     flex-direction:row;
     justify-content: center;
@@ -77,18 +80,16 @@ header {
 }
 
 .hamburger {
-    display: none;
-    position: absolute;
-    font-size: 1.75rem;
-    background: none;
-    border: none;
-    color: white;
+  display: none;
+  font-size: 1.75rem;
+  background: none;
+  border: none;
+  color: white;
 }
-
 @media (max-width: 991px) {
     .hamburger {
         display: flex;
-        position: absolute;
+        position:fixed;
         z-index: 1000;
         left: 1rem;
         right: auto;

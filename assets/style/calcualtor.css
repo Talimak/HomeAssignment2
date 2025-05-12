@@ -140,4 +140,10 @@ button {
     #summary-header {
         font-size: 1.25rem;
     }
+
+    .calculator-summary span {
+    font-weight: bold;
+    color: black;
+    font-size: 1rem;
+}
 }

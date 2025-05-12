@@ -25,36 +25,32 @@
         <li><a href="project-calculator.html" class="active">Project Calculator</a></li>
       </ul>
     </nav>
-    <button class="dark-mode-toggle">
-    <i class="fas fa-moon"></i>
-    </button>
   </header>
 
  <main>
   <section class="form-container">
     <form id="priceCalculatorForm">
-      <label for="websiteType">🌐 Site Type</label>
+      <label class="calcualtor-lables"> Site Type</label>
       <select id="websiteType">
         <option value="-1">--Choose--</option>
         <option value="businessSite">Business Site</option>
         <option value="onlineStore">Online Store</option>
         <option value="blog">Blog</option>
       </select>
+      <label class="calcualtor-lables">Number of Pages (1–10)</label>
+      <input type="number" id="pageCount" min="1" max="10">
 
-      <label for="pageCount">📄 Number of Pages (1–10)</label>
-      <input type="number" id="pageCount" min="1" max="10"/>
-
-      <label for="customDesign">
-        <input type="checkbox" id="customDesign" />
-        ✏️ Custom Design
+      <label class="calcualtor-lables">
+        <input type="checkbox" id="customDesign">
+        Custom Design
       </label>
 
       <button type="button" id="calculateBtn">Calculate Price</button>
       <button type="reset" id="resetBtn">Reset</button>
     </form>
 
-    <div id="projectSummary" class="summary-box hidden">
-      <h3 id="summary-header">📋 Project Summary</h3>
+    <div id="projectSummary" class="summary-box">
+      <h3 id="summary-header">Project Summary</h3>
       <p class="calculator-summary">Site Type: <span id="summaryType"></span></p>
       <p class="calculator-summary">Pages: <span id="summaryPages"></span></p>
       <p class="calculator-summary">Custom Design: <span id="summaryCustom"></span></p>

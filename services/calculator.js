@@ -1,14 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     // חיבור כפתור "Calculate Price"
-    const calcBtn = document.querySelector('button[type="button"]');
-    const resetButton = document.querySelector('button[type="reset"]');
-    const summaryBox = document.querySelector("#projectSummary");
-    const result = document.querySelector("#totalPrice");
+    const calcBtn = document.querySelector("#calculateBtn");
+    const resetButton = document.querySelector("#resetBtn");
+    summaryBox = document.querySelector("#projectSummary");
+
 
     calcBtn.addEventListener('click', calculatePrice);
     // חיבור כפתור reset לאיפוס התוצאה
     resetButton.addEventListener('click', function () {
-    summaryBox.classList.add('hidden');
 
     document.querySelector('#summaryType').textContent = '';
     document.querySelector('#summaryPages').textContent = '';
@@ -59,7 +58,6 @@ function calculatePrice() {
   document.querySelector('#summaryPages').textContent = pageCount;
   document.querySelector('#summaryCustom').textContent = customDesign ? 'Yes' : 'No';
   document.querySelector('#summaryPrice').textContent = totalPrice.toLocaleString() + ' ₪';
-  document.querySelector('#projectSummary').classList.remove('hidden');
 }
 
   

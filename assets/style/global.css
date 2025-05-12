@@ -24,7 +24,7 @@ header {
     position:fixed;
     height: 100px; 
     display: flex;
-    justify-content: center;
+    justify-content:center;
     width: 100%;
     background-color: #3F729B;
     padding: 0;
@@ -33,6 +33,7 @@ header {
 .nav-links {
     height: 6.25rem;
     display: flex;
+    flex-direction:row;
     justify-content: center;
     align-items: center;
     gap: 2rem;
@@ -43,6 +44,10 @@ header {
 }
 
 .nav-bar a {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-weight: bold;
     padding: 0.625rem 1.25rem;
@@ -71,95 +76,65 @@ header {
     box-sizing: border-box;
 }
 
-.hamburger,
-.dark-mode-toggle {
-    cursor: pointer;
-    display: flex;
+.hamburger {
+    display: none;
     position: absolute;
     font-size: 1.75rem;
     background: none;
     border: none;
     color: white;
-    top: 2.2rem;
 }
 
-.hamburger {
-    left: 2rem;
-    display: none;
-}
-
-/* DARK-MODE*/
-.dark-mode-toggle {
-    right: 2rem;
-    position: fixed;
-}
-
-/* add all the .dark-mode styles here. format: .dark-mode .(the elems class u want to style) */
-.dark-mode {
-    background-color: rgba(0, 0, 0, 0.583);
-}
-
-.dark-mode.nav-bar {
-    background-color: #1a2630;
-}
-
-/* Mobile – up to 991px */
 @media (max-width: 991px) {
-
-    /* Styles for all smartphones */
     .hamburger {
         display: flex;
-        position:absolute;
+        position: absolute;
         z-index: 1000;
+        left: 1rem;
+        right: auto;
+        top: 2.5rem;
     }
 
     .nav-links {
+        display: none;
         position: relative;
         padding: 1.2rem;
         width: 100%;
         height: max-content;
         flex-direction: column;
+        transition: opacity 0.3s ease;
         background-color: #3F729B;
-        display: none;
-        padding:1.2rem;
     }
 
     .nav-links.show {
-            display: flex;
+        display: flex;
     }
-    
+
     .footer-bar {
-            font-size: 1rem;
-            flex-direction: column;
-            padding: 1rem;
+        font-size: 1rem;
+        flex-direction: column;
+        padding: 1rem;
     }
 }
 
-/* Mobile and small tablets – 576px and up */
 @media (min-width: 576px) and (max-width: 767px) {
-    /* Styles for phones and small tablets */
+
 }
 
-/* Tablets – 768px and up */
+
 @media (min-width: 768px) and (max-width: 991px) {
-    /* Styles for tablets */
 
 }
 
-/* Laptops – 992px and up */
 @media (min-width: 992px) and (max-width: 1199px) {
-    /* Styles for small laptops */
+
 }
 
-/* Desktops – 1200px and up */
+
 @media (min-width: 1200px) and (max-width: 1399px) {
-    /* Styles for standard desktops */
+
 }
 
-/* Extra Large Screens – 1400px and up */
 @media (min-width: 1400px) {
-    /* Styles for large desktops, ultra-wide screens */
+   
 }
-
-/* max-width: applies styles up to a certain screen size 
-	min-width: applies styles from a certain screen size and up */

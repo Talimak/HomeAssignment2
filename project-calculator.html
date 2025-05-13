@@ -16,7 +16,7 @@
   <header>
     <nav class="nav-bar">
       <button class="hamburger">
-      <i class="fas fa-bars"></i>
+        <i class="fas fa-bars"></i>
       </button>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -27,37 +27,65 @@
     </nav>
   </header>
 
- <main>
-  <section class="form-container">
-    <form id="priceCalculatorForm">
-      <label class="calcualtor-lables"> Site Type</label>
-      <select id="websiteType">
-        <option value="-1">--Choose--</option>
-        <option value="businessSite">Business Site</option>
-        <option value="onlineStore">Online Store</option>
-        <option value="blog">Blog</option>
-      </select>
-      <label class="calcualtor-lables">Number of Pages (1–10)</label>
-      <input type="number" id="pageCount" min="1" max="10">
+  <main>
+    <section class="form-container">
+      <form id="priceCalculatorForm">
+        <label class="calcualtor-lables"> Site Type</label>
+        <select id="websiteType">
+          <option value="-1">--Choose--</option>
+          <option value="businessSite">Business Site</option>
+          <option value="onlineStore">Online Store</option>
+          <option value="blog">Blog</option>
+        </select>
+        <label class="calcualtor-lables">Number of Pages (1–10)</label>
+        <input type="number" id="pageCount" min="1" max="10">
 
-      <label class="calcualtor-lables">
-        <input type="checkbox" id="customDesign">
-        Custom Design
-      </label>
+        <label class="calcualtor-lables">
+          <input type="checkbox" id="customDesign">
+          Custom Design
+        </label>
 
-      <button type="button" id="calculateBtn">Calculate Price</button>
-      <button type="reset" id="resetBtn">Reset</button>
-    </form>
+        <button type="button" id="calculateBtn">Calculate Price</button>
+        <button type="reset" id="resetBtn">Reset</button>
+      </form>
 
-    <div id="projectSummary" class="summary-box">
-      <h3 id="summary-header">Project Summary</h3>
-      <p class="calculator-summary">Site Type: <span id="summaryType"></span></p>
-      <p class="calculator-summary">Pages: <span id="summaryPages"></span></p>
-      <p class="calculator-summary">Custom Design: <span id="summaryCustom"></span></p>
-      <p class="calculator-summary">Total Price: <span id="summaryPrice"></span></p>
-    </div>
-  </section>
-</main>
+      <div id="projectSummary" class="summary-box">
+        <h3 id="summary-header">Project Summary</h3>
+        <p class="calculator-summary">Site Type: <span id="summaryType"></span></p>
+        <p class="calculator-summary">Pages: <span id="summaryPages"></span></p>
+        <p class="calculator-summary">Custom Design: <span id="summaryCustom"></span></p>
+        <p class="calculator-summary">Total Price: <span id="summaryPrice"></span></p>
+      </div>
+      <div id="pricing-table">
+        <table>
+          <tr>
+            <th>Parameter</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Business Site</td>
+            <td>₪1000</td>
+          </tr>
+          <tr>
+            <td>Online Store</td>
+            <td>₪2000</td>
+          </tr>
+          <tr>
+            <td>Blog</td>
+            <td>₪1500</td>
+          </tr>
+          <tr>
+            <td>Extra Pages (above 1)</td>
+            <td>+₪200 per additional page</td>
+          </tr>
+          <tr>
+            <td>Custom Design</td>
+            <td>+₪1000 added to total price</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer-bar">
     <p>© 2025 Tali Makovizky. All rights reserved.</p>

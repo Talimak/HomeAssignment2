@@ -1,4 +1,5 @@
 @import url('variables.css');
+
 .hero-section {
   margin-top: 6.25rem;
   text-align: center;
@@ -15,35 +16,35 @@
 
 .hero-section h1 {
   font-size: 2rem;
-  font-family:sans-serif;
-  color: #142443;
+  font-family:var(--font-family);
+  color: var(--headers-color);
   margin-bottom: 0.6rem;
 }
 
 .hero-section p {
   margin-bottom: 1.25rem;
-  font-size: 1.75rem;
+  font-size: var(--font-size-big);
 }
 
 .index-headers {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color:#142443;
-  font-size:2rem;
+  font-family: var(--font-family);
+  color: var(--headers-color);
+  font-size: var(--font-size-big);
 }
 
 .button {
   display: inline-block;
   padding: 0.5rem 0.625rem;
-  background-color: #476e8b;
+  background-color: var(--nav-bar-color);
   text-decoration: none;
-  color: white;
+  color: var(--the-white-color);
   font-weight: bold;
   border-radius: 0.5rem;
-  font-size: 1.3rem;
+  font-size:var(--font-size-small);
 }
 
 .button:hover {
-  background-color: #1c4559;
+  background-color: var(--button-hover);
 }
 
 .call-to-action {
@@ -59,7 +60,7 @@
 .columns-divider {
   align-self: stretch;
   width: 0.2rem;
-  background-color: #d6d1d1;
+  background-color: var(--devider-color);
   height: auto;
 }
 
@@ -76,19 +77,19 @@
   width: 28.125rem;
   min-height: 31.25rem;
   padding: 1.25rem;
-  background-color: #dbe7f6;
+  background-color: var(--div-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow-light);
   line-height: 1.6;
   border-radius: 1rem;
 }
 
 .project-preview p,
-.contact-info p{
-font-size: 1.5rem;
+.contact-info p {
+  font-size: var(--font-size-big);
 }
 
 .project-preview img {
@@ -105,36 +106,27 @@ font-size: 1.5rem;
   color: #737070;
   font-weight: bold;
   display: inline;
-  font-size: 1.5rem;
+  font-size: var(--font-size-big);
 }
- 
+
 .contact-info a:hover,
-.project-preview a:hover{
- background-color:rgb(190, 209, 226);
+.project-preview a:hover {
+  background-color: rgb(190, 209, 226);
 }
 
 .contact-info i {
   margin-right: 1rem;
-  font-size: 1.5rem;
+  font-size: var(--font-size-big);
   color: rgb(76, 117, 152);
 }
 
 @media (max-width: 575px) {
-  .hero-section img {
-    width: 10rem;
-    height: 10rem;
-  }
-
-  .hero-section h1 {
-    font-size: 1.25rem;
-  }
-
   .hero-section p {
-    font-size: 1rem;
+    font-size: var(--font-size-small);
   }
 
   .button {
-    font-size: 1.125rem;
+    font-size: var(--font-size-small);
     padding: 0.5rem 1rem;
   }
 
@@ -154,23 +146,18 @@ font-size: 1.5rem;
   .project-preview p,
   .contact-info p,
   .contact-info a,
-  .project-preview a{
-    font-size: 1.2rem;
+  .project-preview a {
+    font-size: var(--font-size-small);
   }
 }
 
 @media (min-width: 576px) and (max-width: 766px) {
-  .hero-section img {
-    width: 12rem;
-    height: 12rem;
-  }
-
   .hero-section h1 {
-    font-size: 1.5rem;
+    font-size: var(--font-size-big);
   }
 
   .hero-section p {
-    font-size: 1.25rem;
+    font-size: var(--font-size-small);
   }
 
   .call-to-action {
@@ -189,8 +176,8 @@ font-size: 1.5rem;
   .project-preview p,
   .contact-info p,
   .contact-info a,
-  .project-preview a{
-    font-size: 1.25rem;
+  .project-preview a {
+    font-size: var(--font-size-small);
   }
 
   .columns-divider {
@@ -199,11 +186,6 @@ font-size: 1.5rem;
 }
 
 @media (min-width: 767px) and (max-width: 991px) {
-  .hero-section img {
-    width: 14rem;
-    height: 14rem;
-  }
-
   .call-to-action {
     flex-direction: column;
     flex-wrap: wrap;

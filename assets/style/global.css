@@ -119,7 +119,7 @@ header {
 
     .footer-bar {
         font-size:var(--font-size-small);
-        flex-direction: column;
+        flex-direction:row;
         padding: 1rem;
     }
 }

@@ -59,7 +59,7 @@ header {
 
 .nav-bar a:hover,
 .nav-bar a.active {
-    background-color: #294c68;
+box-shadow: 0 0.625rem 1.5rem rgba(0, 0, 0, 0.15);
 }
 
 .footer-bar {

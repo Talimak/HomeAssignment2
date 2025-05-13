@@ -28,7 +28,7 @@
 
 .about-box:hover,
 .about-img:hover {
-  box-shadow: 0 0.625rem 1.5rem rgba(0, 0, 0, 0.15)
+  box-shadow: 0 0.625rem 1.5rem rgba(0, 0, 0, 0.15);
 }
 
 .about-img {

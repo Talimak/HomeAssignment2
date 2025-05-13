@@ -104,8 +104,13 @@ font-size: 1.5rem;
   text-decoration: none;
   color: #737070;
   font-weight: bold;
-  display: inline-block;
+  display: inline;
   font-size: 1.5rem;
+}
+ 
+.contact-info a:hover,
+.project-preview a:hover{
+ background-color:rgb(190, 209, 226);
 }
 
 .contact-info i {

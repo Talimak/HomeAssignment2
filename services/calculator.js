@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // חיבור כפתור "Calculate Price"
+// Connecting the "Calculate Price" button
     const calcBtn = document.querySelector("#calculateBtn");
     const resetButton = document.querySelector("#resetBtn");
     summaryBox = document.querySelector("#projectSummary");
 
 
     calcBtn.addEventListener('click', calculatePrice);
-    // חיבור כפתור reset לאיפוס התוצאה
+// Connecting the "Reset" button in order to clear the summary box
     resetButton.addEventListener('click', function () {
 
     document.querySelector('#summaryType').textContent = '';
@@ -26,13 +26,13 @@ function calculatePrice() {
 
   let totalPrice = 0;
 
-  // הגבלה על מספר העמודים
+// Limiting the number of pages to 10
   if (pageCount > 10) {
     pageCount = 10;
     document.querySelector("#pageCount").value = 10;
   }
 
-  // מחיר בסיס לפי סוג האתר
+// Base price, based on the website type
   if (websiteType === "-1") {
     totalPrice = 0;
   } else if (websiteType === "businessSite") {
@@ -43,17 +43,17 @@ function calculatePrice() {
     totalPrice += 1500;
   }
 
-  // תוספת לעמודים נוספים
+// Additional cost for extra pages
   if (websiteType !== "-1" && pageCount > 1) {
     totalPrice += (pageCount - 1) * 200;
   }
 
-  // תוספת עבור עיצוב מותאם אישית
+// Additional cost for custom design
   if (websiteType !== "-1" && customDesign) {
     totalPrice += 1000;
   }
 
-  // הצגת הסיכום
+// Summary box display
   document.querySelector('#summaryType').textContent = websiteText;
   document.querySelector('#summaryPages').textContent = pageCount;
   document.querySelector('#summaryCustom').textContent = customDesign ? 'Yes' : 'No';

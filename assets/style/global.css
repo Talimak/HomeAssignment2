@@ -22,19 +22,17 @@ header {
 
 .nav-bar {
     position:fixed;
-    height: 100px; 
+    height: 6.25rem;
+    top: 0; 
     display: flex;
     justify-content:center;
     width: 100%;
     background-color: #3F729B;
     padding: 0;
-    top: 0;
-    left: 0;
-
 }
 
 .nav-links {
-    height:auto;
+    height: 6.25rem;
     display: flex;
     flex-direction:row;
     justify-content: center;
@@ -80,20 +78,24 @@ header {
 }
 
 .hamburger {
-  display: none;
-  font-size: 1.75rem;
-  background: none;
-  border: none;
-  color: white;
+    display: none;
+    position: absolute;
+    font-size: 1.75rem;
+    width: max-content;
+    background: none;
+    border: none;
+    color: white;
+    z-index: 1000;
+    left: 1rem;
+    right: auto;
+    margin: 0;
+    padding: 0;
+    top: 2.5rem;
 }
+
 @media (max-width: 991px) {
     .hamburger {
         display: flex;
-        position:fixed;
-        z-index: 1000;
-        left: 1rem;
-        right: auto;
-        top: 2.5rem;
     }
 
     .nav-links {
@@ -118,7 +120,7 @@ header {
     }
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+/* @media (min-width: 576px) and (max-width: 767px) {
 
 }
 
@@ -138,4 +140,4 @@ header {
 
 @media (min-width: 1400px) {
    
-}
+} */
